@@ -20,11 +20,6 @@ $(call inherit-product-if-exists, hardware/qcom/media/product.mk)
 PRODUCT_VENDOR_PROPERTIES += \
     ro.mediaserver.64b.enable=true
 
-# Packages
-PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.2.vendor \
-    libavservices_minijail.vendor
-
 # Properties
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
